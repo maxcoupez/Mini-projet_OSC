@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
     
 	p.Clear();
 
-	p<< osc::BeginMessage("/test1")<< "3.14"<< "32.00" <<osc::EndMessage;
+	p<< osc::BeginMessage("/test1")<< "250.00"<< "0.20" <<osc::EndMessage;
 
     transmitSocket.Send( p.Data(), p.Size() );
 
